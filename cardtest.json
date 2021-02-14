@@ -1,0 +1,19 @@
+{
+  "cards" : [ {
+    "number" : 1234,
+    "status" : "unblock",
+    "password" : 5678,
+    "name" : "Anastasiia",
+    "expareDatee" : "12/12",
+    "cvv" : 123,
+    "balance" : 999.0
+  }, {
+    "number" : 4321,
+    "status" : "block",
+    "password" : 8765,
+    "name" : "Anastasiia",
+    "expareDatee" : "10/10",
+    "cvv" : 321,
+    "balance" : 555.0
+  } ]
+}
