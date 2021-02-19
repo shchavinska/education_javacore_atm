@@ -14,6 +14,7 @@ public class CardValidator {
     public static boolean checkPin(Card workingCard) throws InputExceptions {
         LOGGER.info("Checking card PIN.");
         for(int tries =3; tries>0 ; tries-=1){
+            System.out.println("Please enter PIN:");
             int pin = Input.inputInt();
             if (pin == workingCard.getPassword()){
                 return true;

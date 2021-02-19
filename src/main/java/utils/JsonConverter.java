@@ -3,7 +3,7 @@ package utils;
 import java.io.IOException;
 import java.nio.file.*;
 
-import card.*;
+import card.DataBase;
 import com.fasterxml.jackson.core.util.*;
 import com.fasterxml.jackson.databind.*;
 
@@ -18,6 +18,7 @@ public class JsonConverter {
     ObjectWriter writer = mapper.writer(new DefaultPrettyPrinter());
 
     public void convertToJsonFile(Object obj, String pathToFile) {
+        LOGGER.info("convertToJsonFile caused");
         try {
             writer.writeValue(Paths.get(pathToFile).toFile(), obj);
         } catch (JsonProcessingException e) {
@@ -28,6 +29,7 @@ public class JsonConverter {
     }
 
     public DataBase readJsonToCard(String file) throws IOException {
+        LOGGER.info("convertToJsonFile caused");
         String jsonStr = new String(Files.readAllBytes(Paths.get(file)));
         DataBase cards = null;
         try {

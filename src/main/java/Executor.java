@@ -1,6 +1,7 @@
 
 import atm.*;
 import exceptions.*;
+import operation.*;
 import org.apache.log4j.*;
 
 import java.io.IOException;
@@ -10,18 +11,14 @@ public class Executor {
 
     public static void main(String[] args) throws IOException, InputExceptions {
         System.out.println("Please insert your card.");
-
-        boolean card = true;
-
-         if (card == true){
-             int userCard = 1234;
-
+        int userCard = Input.inputInt();
+        if (userCard >0){
              LOGGER.info("Card inserted.");
              ATM atm = new ATM();
-             atm.dataInitialize(userCard);
-
-             if(atm.validation() == true){
-                 atm.show();
+             if (atm.dataInitialize(userCard)){
+                 if(atm.validation()){
+                     atm.showAtmMenu();
+                 }
              }
          }
     }

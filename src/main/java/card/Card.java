@@ -37,7 +37,7 @@ public class Card {
         number = 0000;
         status = "unknown";
         password = 0000;
-        name = "Ivan";
+        name = "unknown";
         expareDatee = "00/00";
         cvv = 000;
         balance = 0000.00;

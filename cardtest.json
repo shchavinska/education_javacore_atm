@@ -6,7 +6,7 @@
     "name" : "Anastasiia",
     "expareDatee" : "12/12",
     "cvv" : 123,
-    "balance" : 999.0
+    "balance" : 9999.0
   }, {
     "number" : 4321,
     "status" : "block",
@@ -14,6 +14,6 @@
     "name" : "Anastasiia",
     "expareDatee" : "10/10",
     "cvv" : 321,
-    "balance" : 555.0
+    "balance" : 5555.0
   } ]
 }
